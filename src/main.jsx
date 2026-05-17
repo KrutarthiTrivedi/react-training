@@ -22,7 +22,8 @@ import { createRoot } from 'react-dom/client'
 // import {ContactForm} from './components/hooks/useState/ContactForm.jsx'
 // import { ReactUseEffect } from './components/hooks/useEffect/index.jsx'
 // import { EffectChallange } from './components/hooks/useEffect/EffectChallange.jsx';
-import { CleanUp } from './components/hooks/useEffect/CleanUp.jsx';
+// import { CleanUp } from './components/hooks/useEffect/CleanUp.jsx';
+import {HowNotToFetchApi} from './components/hooks/useEffect/HowNotToFeatchApi.jsx';
 createRoot(document.getElementById('root')).render(
   <>
   <StrictMode>
@@ -45,7 +46,8 @@ createRoot(document.getElementById('root')).render(
     {/* <ContactForm/> */}
     {/* <ReactUseEffect/> */}
     {/* <EffectChallange/> */}
-    <CleanUp/>
+    {/* // <CleanUp/> */}
+    <HowNotToFetchApi/>
   </StrictMode>
   </>
 )
