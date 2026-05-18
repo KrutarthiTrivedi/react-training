@@ -23,7 +23,12 @@ import { createRoot } from 'react-dom/client'
 // import { ReactUseEffect } from './components/hooks/useEffect/index.jsx'
 // import { EffectChallange } from './components/hooks/useEffect/EffectChallange.jsx';
 // import { CleanUp } from './components/hooks/useEffect/CleanUp.jsx';
-import {HowNotToFetchApi} from './components/hooks/useEffect/HowNotToFeatchApi.jsx';
+// import {HowNotToFetchApi} from './components/hooks/useEffect/HowNotToFeatchApi.jsx';
+// import {UseRef} from './components/hooks/useRef/index.jsx';
+// import {ParentComponent} from './components/PropDriling.jsx'
+import {Home} from './components/hooks/ContextApi/home.jsx'
+import {About} from './components/hooks/ContextApi/About.jsx'
+import { BioProvider } from './components/hooks/ContextApi/index.jsx'
 createRoot(document.getElementById('root')).render(
   <>
   <StrictMode>
@@ -47,7 +52,13 @@ createRoot(document.getElementById('root')).render(
     {/* <ReactUseEffect/> */}
     {/* <EffectChallange/> */}
     {/* // <CleanUp/> */}
-    <HowNotToFetchApi/>
+    {/* <HowNotToFetchApi/> */}
+    {/* <UseRef/> */}
+     {/* <ParentComponent/> */}
+      <BioProvider>
+      <Home/>
+      <About/>
+     </BioProvider>
   </StrictMode>
   </>
 )
