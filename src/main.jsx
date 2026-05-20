@@ -26,9 +26,13 @@ import { createRoot } from 'react-dom/client'
 // import {HowNotToFetchApi} from './components/hooks/useEffect/HowNotToFeatchApi.jsx';
 // import {UseRef} from './components/hooks/useRef/index.jsx';
 // import {ParentComponent} from './components/PropDriling.jsx'
-import {Home} from './components/hooks/ContextApi/home.jsx'
-import {About} from './components/hooks/ContextApi/About.jsx'
-import { BioProvider } from './components/hooks/ContextApi/index.jsx'
+// import {Home} from './components/hooks/ContextApi/home.jsx'
+// import {About} from './components/hooks/ContextApi/About.jsx'
+// import { BioProvider } from './components/hooks/ContextApi/index.jsx'
+// import { Services} from './components/hooks/ContextApi/Services.jsx'
+// import {UseReducer} from './components/hooks/useReducer/index.jsx'
+// import { ReactMemo } from './components/hooks/Memo/ReactMemo.jsx';
+import  UseCallback from './components/hooks/Memo/UseCallback.jsx';
 createRoot(document.getElementById('root')).render(
   <>
   <StrictMode>
@@ -55,10 +59,14 @@ createRoot(document.getElementById('root')).render(
     {/* <HowNotToFetchApi/> */}
     {/* <UseRef/> */}
      {/* <ParentComponent/> */}
-      <BioProvider>
+      {/* <BioProvider>
       <Home/>
       <About/>
      </BioProvider>
+    <Services/> */}
+    {/* <UseReducer/> */}
+    <UseCallback/>
+    
   </StrictMode>
   </>
 )
