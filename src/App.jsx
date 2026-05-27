@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./pages/Home.jsx";
 import { About } from "./pages/About.jsx";
 import { Movie } from "./pages/Movie.jsx";
+import { MovieDetails } from "./Components/UI/MovieDetaild.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import AppLayout from "./Components/layout/AppLayout.jsx";
 import { ErrorPage } from "./pages/ErrorPage.jsx";
@@ -24,6 +25,10 @@ const App=()=>{
     {
       path:"/movie",
       element:<Movie />
+    },
+    {
+      path:"/movie/:movieId",
+      element:<MovieDetails />
     },
     {
       path:"/contact",
